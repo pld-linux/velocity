@@ -1,9 +1,8 @@
 # TODO:
 # - .desktop patch with pl desc
-# - pl desc
-# - update BR with ilbraries versions and check BRs
+# - update BR with libraries versions and check BRs
 # - maybe better DESTDIR.patch (it's dirty)
-# - files section corretcion for right premissions
+# - files section correction for right premissions
 Summary:	File manager for GNOME 2 platform
 Summary(pl):	Zarz±dca plików dla platformy GNOME 2
 Name:		velocity
@@ -40,15 +39,15 @@ the GNOME desktop project.
 Velocity integruje dostêp do plików, aplikacji, mediów, zasobów
 Internetowych oraz sieæ Web. Velocity dostarcza dynamicznych
 i bogatych do¶wiadczeñ u¿ytkownika. Velocity jest projektem Wolnego
-Oprogramowania rozwijanym pod GNU General Public Licence i bêdzie
-podstawowym komponentem pulpitu GNOME.
+Oprogramowania rozwijanym na warunkach Powszechnej Licencji Publicznej
+GNU (General Public Licence) i bêdzie podstawowym komponentem pulpitu
+GNOME.
 
 %prep
 %setup -q
 %patch0 -p1
 
 %build
-rm -f missing
 glib-gettextize --copy --force
 %{__libtoolize}
 intltoolize --copy --force
