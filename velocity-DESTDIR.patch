@@ -1,0 +1,52 @@
+diff -aurN velocity-0.1.orig/Makefile.am velocity-0.1/Makefile.am
+--- velocity-0.1.orig/Makefile.am	2003-07-11 15:41:10.000000000 +0200
++++ velocity-0.1/Makefile.am	2003-07-17 14:40:32.000000000 +0200
+@@ -1,26 +1,18 @@
+ SUBDIRS = macros src scripts templates plugins pixmaps
+ 
+-velocitydocdir = ${prefix}/doc/velocity
+-velocitydoc_DATA = \
+-	README\
+-	COPYING\
+-	AUTHORS\
+-	ChangeLog\
+-	NEWS\
+-	INSTALL\
+-	TODO\
+-	ABOUT-NLS
++velocitydocdir =
++velocitydoc_DATA = 
+ 
+ EXTRA_DIST = velocity.anjuta $(velocitydoc_DATA)
+ 
+-gnomemenudir = $(prefix)/@NO_PREFIX_PACKAGE_MENU_DIR@/Applications
++gnomemenudir = $(prefix)/share/applications
+ gnomemenu_DATA = velocity.desktop
+ 
+ # Copy all the spec files. Of course, only one is actually used.
+ dist-hook:
+ 	for specfile in *.spec; do \
+ 		if test -f $$specfile; then \
+-			cp -p $$specfile $(distdir); \
++			cp -p $$specfile $(DESTDIR)$(distdir); \
+ 		fi \
+ 	done
+ 
+diff -aurN velocity-0.1.orig/scripts/Makefile.am velocity-0.1/scripts/Makefile.am
+--- velocity-0.1.orig/scripts/Makefile.am	2003-07-11 15:41:48.000000000 +0200
++++ velocity-0.1/scripts/Makefile.am	2003-07-17 14:28:12.000000000 +0200
+@@ -13,4 +13,4 @@
+ EXTRA_DIST = $(velocity_scripts_DATA)
+ 
+ install-data-hook:
+-	chmod a+x $(velocity_scriptsdir)/*
++	chmod a+x $(DESTDIR)$(velocity_scriptsdir)/*
+diff -aurN velocity-0.1.orig/templates/Makefile.am velocity-0.1/templates/Makefile.am
+--- velocity-0.1.orig/templates/Makefile.am	2003-07-11 15:41:43.000000000 +0200
++++ velocity-0.1/templates/Makefile.am	2003-07-17 14:28:44.000000000 +0200
+@@ -16,4 +16,4 @@
+ EXTRA_DIST = $(velocity_templates_DATA)
+ 
+ install-data-hook:
+-	chmod a+x $(velocity_templatesdir)/*
++	chmod a+x $(DESTDIR)$(velocity_templatesdir)/*
