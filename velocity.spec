@@ -37,7 +37,11 @@ under the GNU General Public License and will be a core component of
 the GNOME desktop project.
 
 %description -l pl
-write me
+Velocity integruje dostêp do plików, aplikacji, mediów, zasobów
+Internetowych oraz sieæ Web. Velocity dostarcza dynamicznych
+i bogatych do¶wiadczeñ u¿ytkownika. Velocity jest projektem Wolnego
+Oprogramowania rozwijanym pod GNU General Public Licence i bêdzie
+podstawowym komponentem pulpitu GNOME.
 
 %prep
 %setup -q
