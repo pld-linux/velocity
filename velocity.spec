@@ -11,7 +11,7 @@ Version:	0.1
 Release:	0.beta.1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://dl.sourceforge.net/sourceforge/velocity/%{name}-%{version}beta.tar.bz2
+Source0:	http://www.ckatechnologies.com/velocity/%{name}-%{version}beta.tar.bz2
 # Source0-md5:	4c7b90a40337e53d00ffc58560bc0ef7
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://velocity.sourceforge.net/
