@@ -78,4 +78,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_datadir}/%{name}/templates
 %dir %{_pixmapsdir}/%{name}
 %{_pixmapsdir}/%{name}/*
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
