@@ -4,7 +4,7 @@
 # - maybe better DESTDIR.patch (it's dirty)
 # - files section correction for right premissions
 Summary:	File manager for GNOME 2 platform
-Summary(pl.UTF-8):   Zarządca plików dla platformy GNOME 2
+Summary(pl.UTF-8):	Zarządca plików dla platformy GNOME 2
 Name:		velocity
 Version:	0.1
 Release:	0.beta.1
