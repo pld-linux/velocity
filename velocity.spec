@@ -4,7 +4,7 @@
 # - maybe better DESTDIR.patch (it's dirty)
 # - files section correction for right premissions
 Summary:	File manager for GNOME 2 platform
-Summary(pl):	Zarz±dca plików dla platformy GNOME 2
+Summary(pl.UTF-8):   ZarzÄ…dca plikÃ³w dla platformy GNOME 2
 Name:		velocity
 Version:	0.1
 Release:	0.beta.1
@@ -35,12 +35,12 @@ rich user experience. Velocity is a free software project developed
 under the GNU General Public License and will be a core component of
 the GNOME desktop project.
 
-%description -l pl
-Velocity integruje dostêp do plików, aplikacji, mediów, zasobów
-Internetowych oraz sieæ Web. Velocity dostarcza dynamicznych
-i bogatych do¶wiadczeñ u¿ytkownika. Velocity jest projektem Wolnego
+%description -l pl.UTF-8
+Velocity integruje dostÄ™p do plikÃ³w, aplikacji, mediÃ³w, zasobÃ³w
+Internetowych oraz sieÄ‡ Web. Velocity dostarcza dynamicznych
+i bogatych doÅ›wiadczeÅ„ uÅ¼ytkownika. Velocity jest projektem Wolnego
 Oprogramowania rozwijanym na warunkach Powszechnej Licencji Publicznej
-GNU (General Public Licence) i bêdzie podstawowym komponentem pulpitu
+GNU (General Public Licence) i bÄ™dzie podstawowym komponentem pulpitu
 GNOME.
 
 %prep
